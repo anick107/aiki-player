@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta content='width=1024' name='viewport'>
@@ -92,7 +92,7 @@
 
   <script type="text/javascript">
     // load clips from json
-    $.getJSON("clips.json", function(clips) {
+    $.getJSON("https://anick107.github.io/aiki-player/docs/clips.json", function(clips) {
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/player_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
