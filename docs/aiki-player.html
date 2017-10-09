@@ -91,79 +91,83 @@
   <div class="clrscr"></div>
 
   <script type="text/javascript">
-    // load clips from json
-    $.getJSON("https://anick107.github.io/aiki-player/docs/clips.json", function(clips) {
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
-        var curClipNdx = 0;
-        var player;
-        function onYouTubePlayerAPIReady() {
-          player = new YT.Player('player', {
-            height: '480',
-            width: '720',
-            videoId: clips[curClipNdx].videoId
-          });
-        }
-
-        // refresh the menu
-        function RebuildMenu(curClipNdx){        
-            $('#rels').empty();
-            jQuery.each(clips[curClipNdx].rels, function(i, val) {
-              $('#rels').append("<li rel=\"" + i +"\">" + val +"</li>");
-            });
-
-            $(".navigator li").click(function(){
-              var rel = $(this).attr('rel');
-              player.seekTo(parseFloat(rel));
-            });
-        }
-
-        $(window).load(function(){
-            RebuildMenu(curClipNdx);
-
-            // fillout the clips menu
-            jQuery.each(clips, function(i, val) {
-              $('#select').append("<option value=\"" + i +"\">" + val.label +"</li>");
-            });
-
-
-            // on clip change
-            $('#select').change(function(){
-              curClipNdx = $('#select option:selected').val();
-              player.loadVideoById(clips[curClipNdx].videoId);
-              RebuildMenu(curClipNdx);
-            });
-
-
-            // manual seek function
-            jQuery('#seek').click(function(){
-              player.seekTo(parseFloat($("#seekto").val()));
-              return false;
-            });
-
-            // update the timer, change the focus
-            setInterval(function() {
-              var timer = Math.round(player.getCurrentTime());
-              $('#timer').html(timer);
-
-              $('.navigator li').each(function(){
-                $(this).removeClass('active');
-                
-                if ($(this).attr('rel') < timer) {
-                  $(this).addClass('visited');
-                } else  {
-                  $(this).removeClass('visited');
-                }
-              });
-
-              $('#title').html($('.visited:last').html());
-              $('.visited:last').addClass('active');
-            }, 1000);
+      // init the player
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          height: '480',
+          width: '720',
+          videoId: "gRlhNA63-Kc"
         });
-    });
+      }
+
+
+      (function() {
+        $.getJSON("https://anick107.github.io/aiki-player/docs/clips.json")
+          .done(function( clips ) {              
+              var curClipNdx = 0;
+
+              // refresh the menu
+              function RebuildMenu(curClipNdx){        
+                  $('#rels').empty();
+                  jQuery.each(clips[curClipNdx].rels, function(i, val) {
+                    $('#rels').append("<li rel=\"" + i +"\">" + val +"</li>");
+                  });
+
+                  $(".navigator li").click(function(){
+                    var rel = $(this).attr('rel');
+                    player.seekTo(parseFloat(rel));
+                  });
+              }
+
+              $(window).load(function(){
+                  RebuildMenu(curClipNdx);
+
+                  // fillout the clips menu
+                  jQuery.each(clips, function(i, val) {
+                    $('#select').append("<option value=\"" + i +"\">" + val.label +"</li>");
+                  });
+
+
+                  // on clip change
+                  $('#select').change(function(){
+                    curClipNdx = $('#select option:selected').val();
+                    player.loadVideoById(clips[curClipNdx].videoId);
+                    RebuildMenu(curClipNdx);
+                  });
+
+
+                  // manual seek function
+                  jQuery('#seek').click(function(){
+                    player.seekTo(parseFloat($("#seekto").val()));
+                    return false;
+                  });
+
+                  // update the timer, change the focus
+                  setInterval(function() {
+                    var timer = Math.round(player.getCurrentTime());
+                    $('#timer').html(timer);
+
+                    $('.navigator li').each(function(){
+                      $(this).removeClass('active');
+                      
+                      if ($(this).attr('rel') < timer) {
+                        $(this).addClass('visited');
+                      } else  {
+                        $(this).removeClass('visited');
+                      }
+                    });
+
+                    $('#title').html($('.visited:last').html());
+                    $('.visited:last').addClass('active');
+                  }, 1000);
+              });
+          });
+      })();
 
   </script>
 </body>
