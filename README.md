@@ -1,7 +1,7 @@
 # aiki-player
 The idea of this player is to provide additional information to the exam preparation videos. 
 
-[Open the player](docs/aiki-player.html)
+[Open the player](https://anick107.github.io/aiki-player/docs/aiki-player.html)
 
 ## Disclaimer
 
