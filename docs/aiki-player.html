@@ -122,6 +122,7 @@
               // refresh the menu
               function RebuildMenu(curClipNdx){        
                   $('#rels').empty();
+                  $('#title').empty();
                   jQuery.each(clips[curClipNdx].rels, function(i, val) {
                     $('#rels').append("<li rel=\"" + i +"\">" + val +"</li>");
                   });
