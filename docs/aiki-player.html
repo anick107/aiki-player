@@ -128,7 +128,7 @@
 
                   $(".navigator li").click(function(){
                     var rel = $(this).attr('rel');
-                    player.seekTo(parseFloat(rel));
+                    player.seekTo(parseFloat(rel) + 0.25);
                   });
               }
 
