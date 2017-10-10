@@ -128,7 +128,7 @@
 
                   $(".navigator li").click(function(){
                     var rel = $(this).attr('rel');
-                    player.seekTo(parseFloat(rel) + 0.25);
+                    player.seekTo(parseFloat(rel));
                   });
               }
 
@@ -163,7 +163,7 @@
                     $('.navigator li').each(function(){
                       $(this).removeClass('active');
                       
-                      if ($(this).attr('rel') < timer) {
+                      if ($(this).attr('rel') <= timer) {
                         $(this).addClass('visited');
                       } else  {
                         $(this).removeClass('visited');
