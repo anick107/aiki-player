@@ -49,12 +49,18 @@
     width: 30%;
     float: right;
     min-width: 350px;
-    padding: 0 20px 0;
+    padding: 20px;
   }
 
   .right select{
     margin: 0 20px 0;
     font-size: 1.2em;
+  }
+
+  a#edit{
+    margin: 20px;
+    border-bottom: 2px dotted #999;
+    text-decoration: none;
   }
 
   /* panel */
@@ -70,6 +76,8 @@
 
   div.timer {
     border: 1px dotted #333;
+    padding: 5px 20px;
+    margin: 5px 20px;
   }
 </style>
 </head>
@@ -83,7 +91,7 @@
     <select id="select">
     </select>
     <ul class="navigator" id="rels"></ul>
-    <a class="edit" href="https://github.com/anick107/aiki-player/blob/master/docs/clips.json">Edit clips on GitHub</a>    
+    <a class="edit" href="https://github.com/anick107/aiki-player/blob/master/docs/clips.json">Edit clips on GitHub</a>
     <div class="timer">
       <p><a href="#" id="seek">Manual seek</a> to <input type="text" id="seekto" value="25.5" size="4" /> seconds</p>
       <p>Current timer: <span id="timer"></span></p>
