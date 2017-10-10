@@ -24,7 +24,7 @@ Currently all information is stored in [clips.json](https://github.com/anick107/
 ```
 Note: actual JSON file should not include comments.
 
-Since it's hosted on github, feel free to pull-request your changes. Extention of the clips database (clips.json) is much appreciated.
+Since it's hosted on github, feel free to pull-request your changes. Extention of the clips database is much appreciated.
 
 
 ## Disclaimer
