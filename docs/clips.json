@@ -18,7 +18,19 @@
    {  
       "label":"Aikido Kokoro, 5 kyu",
       "videoId":"11lFn4wpfsk",
-      "rels":{}
+      "rels":{
+        "1": "suwari waza - aihanmi katate dori - ikkyo",
+        "58": "suwari waza - aihanmi katate dori - nikkyo",
+        "130": "tachi waza - aihanmi katate dori - nikkyo",
+        "206": "tachi waza - aihanmi katate dori - kote gaeshi",
+        "242": "tachi waza - gyakuhanmi katate dori - ikkyo",
+        "302": "tachi waza - gyakuhanmi katate dori - nikkyo",
+        "369": "tachi waza - gyakuhanmi katate dori - irimi nage",
+        "394": "tachi waza - gyakuhanmi katate dori - kote gaeshi",
+        "432": "tachi waza - gyakuhanmi katate dori - shiho gaeshi",
+        "479": "tachi waza - gyakuhanmi katate dori - uchikaiten nage",
+        "504": "tachi waza - ryote dori - tenchi nage"
+      }
    },
    {  
       "label":"Aikido Kokoro, 4 kyu",
