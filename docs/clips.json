@@ -26,17 +26,46 @@
       "rels":{}
    },
    {  
-      "label":"Aikido Schule Bodo Rödel, 3rd kyu",
+      "label":"Aikido Schule Bodo Rödel, 3 kyu",
       "videoId":"3NGQz--VK0E",
-      "rels":{}
+      "rels":{
+        "1":"katate dori - sankyo",
+        "24": "ude garami",
+        "36": "kata dori - sankyo",
+        "62": "ryote dori - ikkyo",
+        "81": "ryote dori - shiho nage",
+        "95": "ryote dori - irimi nage",
+        "104": "shomen uchi - sankyo",
+        "126": "yokomen uchi - kote gaeshi",
+        "138": "yokomen uchi - shiho nage",
+        "154": "yokomen uchi - irimi nage",
+        "164": "yokomen uchi - ude kime nage",
+        "177": "ushiro ryote dori - ikkyo",
+        "200": "ushiro ryote dori - nikkyo",
+        "227": "ushiro ryote dori - sankyo",
+        "253": "ushiro ryote dori - kote gaeshi",
+        "267": "ushiro ryote dori - kokyu nage",
+        "275": "suwari waza - katate dori - ikkyo",
+        "295": "suwari waza - katate dori - nikyo",
+        "318": "suwari waza - katate dori - sankyo",
+        "342": "suwari waza - katate dori - irimi nage",
+        "350": "suwari waza - kata dori - ikkyo",
+        "368": "suwari waza - kata dori - nikkyo",
+        "389": "suwari waza - kata dori - sankyo",
+        "410": "suwari waza - shomen uchi - ikkyo omote",
+        "421": "suwari waza - shomen uchi - nikyo ura",
+        "431": "suwari waza - shomen uchi - sankyo",
+        "452": "hanmi handachi - katate dori - shiho nage",
+        "467": "hanmi handachi - katate dori - uchi kaiten nage"
+      }
    },
    {  
-      "label":"Aikido Schule Bodo Rödel, 2nd kyu",
+      "label":"Aikido Schule Bodo Rödel, 2 kyu",
       "videoId":"A8Os4buJOkQ",
       "rels":{}
    },
    {  
-      "label":"Aikido Schule Bodo Rödel, 1st kyu",
+      "label":"Aikido Schule Bodo Rödel, 1 kyu",
       "videoId":"GC2hnFXAhOY",
       "rels":{  
          "1":"katate dori - sumi otoshi",
