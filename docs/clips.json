@@ -35,7 +35,29 @@
    {  
       "label":"Aikido Kokoro, 4 kyu",
       "videoId":"LaSilceurNY",
-      "rels":{}
+      "rels":{
+        "1": "suwari waza - gyakuhanmi katate dori - ikkyo",
+        "77": "suwari waza - gyakuhanmi katate dori - nikkyo",
+        "154": "suwari waza - gyakuhanmi katate dori - sankyo",
+        "240": "suwari waza - aihanmi katate dori - irimi nage",
+        "270": "handachi handachi waza - gyakuhanmi katate dori - shiho nage",
+        "320": "tachi waza - aihanmi katate dori - sankyo",
+        "406": "tachi waza - gyakuhanmi katate dori - sankyo",
+        "494": "tachi waza - gyakuhanmi katate dori - tenchi",
+        "510": "tachi waza - gyakuhanmi katate dori - ude kime nage",
+        "556": "tachi waza - gyakuhanmi katate dori - soto keiten nage",
+        "606": "tachi waza - gyakuhanmi katate dori - sokumen irimi nage",
+        "628": "ryote dori - ikkyo",
+        "689": "ryote dori - nikkyo",
+        "764": "ryote dori - sankyo",
+        "850": "ryote dori - shiho nage",
+        "890": "ryote dori - ude kime nage",
+        "931": "ryote dori - irimi nage",
+        "960": "ryote dori - kote gaeshi",
+        "990": "kata dori - ikkyo",
+        "1048": "kata dori - nikkyo",
+        "1118": "kata dori - sankyo"
+      }
    },
    {  
       "label":"Aikido Schule Bodo Rödel, 3 kyu",
